@@ -1,0 +1,23 @@
+services:
+  subscriber:
+    build: .
+    container_name: subscriber
+    restart: unless-stopped
+    command: python subscriber.py
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./user_serssion.session:/app/user_serssion.session
+
+  bot:
+    build: .
+    container_name: bot
+    restart: unless-stopped
+    command: python bot.py
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      - subscriber 

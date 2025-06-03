@@ -1,0 +1,7 @@
+telethon==1.29.3
+loguru==0.7.2
+openai==0.28.1
+aiogram==3.4.1
+pydantic==2.5.3
+python-dotenv==1.0.1
+pydantic-settings 
