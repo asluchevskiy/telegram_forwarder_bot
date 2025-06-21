@@ -8,7 +8,7 @@ services:
       - .env
     volumes:
       - ./logs:/app/logs
-      - ./user_serssion.session:/app/user_serssion.session
+      - ./user_session.session:/app/user_session.session
 
   bot:
     build: .

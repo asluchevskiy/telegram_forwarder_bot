@@ -92,5 +92,5 @@ log/
 .dockerignore
 
 # Project specific
-user_serssion.session
+user_session.session
 bot_session.session 
